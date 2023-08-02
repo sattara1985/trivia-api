@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Trivias</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Generador de Trivias</h1>
+    <div class="form-group">
+      <label for="category">Categoría:</label>
+      <select class="form-control" id="category">
+                <option value="10">Entertainment: Books</option>
+                <option value="11">Entertainment: Film</option>
+                <option value="12">Entertainment: Music</option>
+                <option value="13">Entertainment: Musicals & Theatres</option>
+                <option value="14">Entertainment: Television</option>
+                <option value="15">Entertainment: Video Games</option>
+                <option value="16">Entertainment: Board Games</option>
+                <option value="17">Science & Nature</option>
+                <option value="18">Science: Computers</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="20">Mythology</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="25">Art</option>
+                <option value="26">Celebrities</option>
+                <option value="27">Animals</option>
+                <option value="28">Vehicles</option>
+                <option value="29">Entertainment: Comics</option>
+                <option value="30">Science: Gadgets</option>
+                <option value="31">Entertainment: Japanese Anime & Manga</option>
+                <option value="32">Entertainment: Cartoon & Animations</option>
+            </select>
+    </div>
+    <div class="form-group">
+      <label for="difficulty">Dificultad:</label>
+      <select class="form-control" id="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="medium">Medio</option>
+        <option value="hard">Difícil</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="type">Tipo de Respuesta:</label>
+      <select class="form-control" id="type">
+        <option value="multiple">Múltiple</option>
+        <option value="boolean">Verdadero/Falso</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="crearTrivia()">Crear Trivia</button>
+
+    <div id="triviaContainer" class="mt-4"></div>
+
+    <div id="resultadoTrivia" class="mt-4"></div>
+
+    <button type="button" class="btn btn-primary mt-4" onclick="nuevaTrivia()">Crear Nueva Trivia</button>
+    <button type="button" class="btn btn-primary mt-4" onclick=" mostrarResultadoTrivia()">Calificar</button>
+  </div>
+
+  <!-- Enlace al archivo JS de Bootstrap y el archivo JS personalizado -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
